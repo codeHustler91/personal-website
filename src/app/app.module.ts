@@ -6,12 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { FirstCompComponent } from './first-comp/first-comp.component';
 import { EmailFormComponent } from './email-form/email-form.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstCompComponent,
-    EmailFormComponent
+    EmailFormComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
