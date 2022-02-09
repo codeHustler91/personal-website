@@ -11,7 +11,7 @@ export class AppComponent {
   themeColor = "grey";
 
   updateThemeColor() {
-    this.themeColor = event.target.value;
+    // this.themeColor = event.target.value;
   }
 
 }
