@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dk-website';
+
+  themeColor = "grey";
+
+  updateThemeColor() {
+    this.themeColor = event.target.value;
+  }
+
 }
