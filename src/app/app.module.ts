@@ -9,6 +9,7 @@ import { FirstCompComponent } from './first-comp/first-comp.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { AngularTutorial1Component } from './angular-tutorial1/angular-tutorial1.component';
+import { RelationshipBuilderComponent } from './relationship-builder/relationship-builder.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AngularTutorial1Component } from './angular-tutorial1/angular-tutorial1
     FirstCompComponent,
     EmailFormComponent,
     ModalComponent,
-    AngularTutorial1Component
+    AngularTutorial1Component,
+    RelationshipBuilderComponent
   ],
   imports: [
     BrowserModule,
