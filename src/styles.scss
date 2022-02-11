@@ -2,3 +2,15 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+$base-color: #00c2c7;
+$triad-a: #c700c2;
+$triad-b: #c2c700;
+
+div {
+    background-color: $base-color;
+    color: $triad-b
+}
+p {
+    background-color: $triad-a;
+}
