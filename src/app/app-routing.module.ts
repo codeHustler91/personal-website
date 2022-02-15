@@ -1,14 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AngularTutorial1Component } from '../app/angular-tutorial1/angular-tutorial1.component';
-import { RelationshipBuilderComponent } from '../app/relationship-builder/relationship-builder.component';
-import { EmailFormComponent } from '../app/email-form/email-form.component'
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { RelationshipBuilderComponent } from './relationship-builder/relationship-builder.component';
+import { EmailFormComponent } from './email-form/email-form.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
+import { SecretComponent } from './secret/secret.component';
+import { WorkshopComponent } from './workshop/workshop.component';
+import { ContactComponent } from './contact/contact.component';
+import { BioComponent } from './bio/bio.component';
 
 
 const routes: Routes = [
-  { path: 'tutorial', component: AngularTutorial1Component },
+  { path: '', component: LandingPageComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'bio', component: BioComponent },
+  { path: 'email_form', component: EmailFormComponent },
   { path: 'relationship', component: RelationshipBuilderComponent },
-  { path: 'email_form', component: EmailFormComponent }
+  { path: 'upcoming', component: UpcomingComponent },
+  { path: 'workshop', component: WorkshopComponent },
+  { path: '**', component: SecretComponent }
 ];
 
 @NgModule({

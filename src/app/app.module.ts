@@ -10,6 +10,12 @@ import { EmailFormComponent } from './email-form/email-form.component';
 import { ModalComponent } from './modal/modal.component';
 import { AngularTutorial1Component } from './angular-tutorial1/angular-tutorial1.component';
 import { RelationshipBuilderComponent } from './relationship-builder/relationship-builder.component';
+import { SecretComponent } from './secret/secret.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
+import { WorkshopComponent } from './workshop/workshop.component';
+import { ContactComponent } from './contact/contact.component';
+import { BioComponent } from './bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { RelationshipBuilderComponent } from './relationship-builder/relationshi
     EmailFormComponent,
     ModalComponent,
     AngularTutorial1Component,
-    RelationshipBuilderComponent
+    RelationshipBuilderComponent,
+    SecretComponent,
+    LandingPageComponent,
+    UpcomingComponent,
+    WorkshopComponent,
+    ContactComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,

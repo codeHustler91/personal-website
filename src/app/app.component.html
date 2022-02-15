@@ -1,10 +1,11 @@
 <nav class="nav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" routerLink="/tutorial" routerLinkActive="active">Angular Tutorial</a>
-  <a class="nav-link" routerLink="/relationship" routerLinkActive="active">Relationship Status</a>
+  <a class="nav-link" routerLink="/" routerLinkActive="active">Main</a>
+  <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+  <a class="nav-link" routerLink="/bio" routerLinkActive="active">Bio</a>
   <a class="nav-link" routerLink="/email_form" routerLinkActive="active">Email Form</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" href="#">Disabled</a>
+  <a class="nav-link" routerLink="/relationship" routerLinkActive="active">Relationship Blog</a>
+  <a class="nav-link" routerLink="/upcoming" routerLinkActive="active">Upcoming Features</a>
+  <a class="nav-link" routerLink="/workshop" routerLinkActive="active">Workshop</a>
 </nav>
 
 <div class="container">
@@ -13,46 +14,6 @@
 
   <input type="text" placeholder="type your color here" (onKey)="updateThemeColor()" >
   <p>the value of themeColor is {{ themeColor }}</p>
-  <app-first-comp></app-first-comp>
-
-  <app-modal></app-modal>
-
-  <div>
-    <h2>Contact Info</h2>
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-action">phone number</li>
-      <li class="list-group-item list-group-item-action">Location: Baton Rouge, LA</li>
-      <li class="list-group-item list-group-item-action">Github</li>
-      <li class="list-group-item list-group-item-action">Linkd in</li>
-    </ul>
-  </div>
-
-
-  <div>
-    <h2>Biography</h2>
-    <p>it all started when i was born...</p>
-    <p>Bachelor of Science in Mechanical Engineering from the University of Central Florida class of 2015</p>
-    <h2>Skills</h2>
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-action list-group-item-primary">Angular</li>
-      <li class="list-group-item list-group-item-action list-group-item-secondary">React</li>
-      <li class="list-group-item list-group-item-action list-group-item-success">Javascript/Typescript</li>
-      <li class="list-group-item list-group-item-action list-group-item-danger">Node.js</li>
-      <li class="list-group-item list-group-item-action list-group-item-warning">Python</li>
-      <li class="list-group-item list-group-item-action list-group-item-info">Ruby on Rails</li>
-      <li class="list-group-item list-group-item-action list-group-item-dark">and many more...</li>
-    </ul>
-  </div>
-
-  <h2>Ideas for future cool stuff</h2>
-  <ul class="list-group">
-    <li class="list-group-item list-group-item-action">Game of Life simulator</li>
-    <li class="list-group-item list-group-item-action">Make Each title editable, make the background color changeable, maybe let them save preferences... in cache? or db? need a clear cache button</li>
-    <li class="list-group-item list-group-item-action">tic-tac-toe</li>
-    <li class="list-group-item list-group-item-action">chess</li>
-    <li class="list-group-item list-group-item-action">pull Letterboxed info from thier api?</li>
-    <li class="list-group-item list-group-item-action">interactive art builder?? users input some some feilds and it generates something pretty?? use a location to create map art?</li>
-  </ul>
 
   <footer>
     This is the bottom of the page
