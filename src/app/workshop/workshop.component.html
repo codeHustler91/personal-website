@@ -5,16 +5,17 @@
         {{cardHeader}}
     </div>
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">{{ cardTitle }}</h5>
+        <p class="card-text">{{ cardText }}</p>
+        <button class="btn btn-primary" (click)="showInputs = !showInputs">Edit Card</button>
+    </div>
+    <div *ngIf="showInputs">
+        <input id="card-header" name="cardHeader" [(ngModel)]="cardHeader" type="text" placeholder="Card Header"><br>
+        <input id="card-title" name="cardTitle" [(ngModel)]="cardTitle" type="text" placeholder="Card Title"><br>
+        <input id="card-text" name="cardText" [(ngModel)]="cardText" type="text" placeholder="Card Text"><br>
     </div>
 </div>
-<div>
-    <input id="card-header" name="cardHeader" [(ngModel)]="cardHeader" type="text" placeholder="Card Header">
-    <button onclick="submitHeader">Submit Header</button>
-</div>
-
+    
 <app-first-comp></app-first-comp>
 
 <app-modal></app-modal>

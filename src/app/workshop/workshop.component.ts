@@ -11,10 +11,13 @@ export class WorkshopComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  showInputs: boolean = true;
+  cardHeader: string = '';
+  cardTitle: string = '';
+  cardText: string = '';
 
-  cardHeader = '';
-
-  submitHeader() {
+  changeShowInputs() {
+    this.showInputs = !this.showInputs;
   }
 
 }
