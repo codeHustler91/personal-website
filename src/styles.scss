@@ -7,9 +7,22 @@ $base-color: #00c2c7;
 $triad-a: #c700c2;
 $triad-b: #c2c700;
 
+$mardi-purple: #880085;
+$mardi-green: #008803;
+$mardi-gold: #ffb001;
 
 body {
+    nav {
+        background-color: $mardi-purple;
+        color: $mardi-gold
+    }
+
     h1 {
         padding: 1em 0 .5em 0;
+        color: $mardi-gold
+    }
+    .outline {
+        border: 1px solid $mardi-green;
+        border-radius: 3px;
     }
 }
