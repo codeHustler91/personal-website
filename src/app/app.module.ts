@@ -16,7 +16,7 @@ import { UpcomingComponent } from './upcoming/upcoming.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { ContactComponent } from './contact/contact.component';
 import { BioComponent } from './bio/bio.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +36,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     CommonModule,
     AppRoutingModule,
     NgbModule

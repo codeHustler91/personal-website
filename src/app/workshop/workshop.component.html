@@ -10,12 +10,12 @@
         <button class="btn btn-primary" (click)="showInputs = !showInputs">Edit Card</button>
     </div>
     <div *ngIf="showInputs">
-        <input id="card-header" name="cardHeader" [(ngModel)]="cardHeader" type="text" placeholder="Card Header"><br>
-        <input id="card-title" name="cardTitle" [(ngModel)]="cardTitle" type="text" placeholder="Card Title"><br>
-        <input id="card-text" name="cardText" [(ngModel)]="cardText" type="text" placeholder="Card Text"><br>
+        <input id="card-header" name="cardHeader" [(ngModel)]="cardHeader" type="text"><br>
+        <input id="card-title" name="cardTitle" [(ngModel)]="cardTitle" type="text"><br>
+        <input id="card-text" name="cardText" [(ngModel)]="cardText" type="text"><br>
     </div>
 </div>
-    
+
 <app-first-comp></app-first-comp>
 
 <app-modal></app-modal>
