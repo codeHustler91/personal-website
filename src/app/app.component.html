@@ -1,10 +1,35 @@
-<nav class="nav">
+<nav class="nav nav-tabs">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        </ul>
   <a class="nav-link" routerLink="/" routerLinkActive="active">Main</a>
   <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
   <a class="nav-link" routerLink="/bio" routerLinkActive="active">Bio</a>
   <a class="nav-link" routerLink="/email_form" routerLinkActive="active">Email Form</a>
   <a class="nav-link" routerLink="/relationship" routerLinkActive="active">Relationship Blog</a>
-  <a class="nav-link" routerLink="/upcoming" routerLinkActive="active">Upcoming Features</a>
+  <div class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Upcoming Features</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" routerLink="/upcoming" routerLinkActive="active">Strike</a>
+      <a class="dropdown-item" href="#">tic-tac-no</a>
+      <a class="dropdown-item" href="#">wordle (riddle)</a>
+      <a class="dropdown-item" href="#">game of life</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">movie & tv recommendations</a>
+    </div>
+  </div>
   <a class="nav-link" routerLink="/workshop" routerLinkActive="active">Workshop</a>
 </nav>
 
