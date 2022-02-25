@@ -17,6 +17,7 @@ import { WorkshopComponent } from './workshop/workshop.component';
 import { ContactComponent } from './contact/contact.component';
 import { BioComponent } from './bio/bio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DogNamesComponent } from './dog-names/dog-names.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UpcomingComponent,
     WorkshopComponent,
     ContactComponent,
-    BioComponent
+    BioComponent,
+    DogNamesComponent
   ],
   imports: [
     BrowserModule,
