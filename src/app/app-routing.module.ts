@@ -8,6 +8,7 @@ import { SecretComponent } from './secret/secret.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { ContactComponent } from './contact/contact.component';
 import { BioComponent } from './bio/bio.component';
+import { DogNamesComponent } from './dog-names/dog-names.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'bio', component: BioComponent },
   { path: 'email_form', component: EmailFormComponent },
+  { path: 'dog_names', component: DogNamesComponent },
   { path: 'relationship', component: RelationshipBuilderComponent },
   { path: 'upcoming', component: UpcomingComponent },
   { path: 'workshop', component: WorkshopComponent },
