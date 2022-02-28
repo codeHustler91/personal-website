@@ -1,5 +1,21 @@
-<p>dog names</p>
+<div class="card">
+  <div class="card-header">
+      {{ logType }}
+  </div>
+  <div class="card-body">
+      <h5 class="card-title">{{ logText }}</h5>
+      <p class="card-text">{{ time }}</p>
+      <button class="btn btn-primary" (click)="showInputs = !showInputs">Edit Card</button>
+  </div>
+  <div *ngIf="showInputs">
+      <input id="card-header" name="logType" [(ngModel)]="logType" type="text"><br>
+      <input id="card-title" name="logText" [(ngModel)]="logText" type="text"><br>
+      <input id="card-text" name="time" [(ngModel)]="time" type="text"><br>
+  </div>
+</div>
 
+<h1>And the winner is.... Bruce!</h1>
+<p>dog names</p>
 <ul class="list-group">
   <li class="list-group-item list-group-item-action">Andy</li>
   <li class="list-group-item list-group-item-action">Art</li>

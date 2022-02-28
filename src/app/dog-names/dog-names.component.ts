@@ -12,4 +12,9 @@ export class DogNamesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showInputs: boolean;
+  logType: string;
+  logText: string;
+  time: any;
+
 }
