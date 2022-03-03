@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+
 
 @Component({
   selector: 'app-dog-names',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogNamesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cookieService: CookieService) {}
 
   ngOnInit(): void {
   }
@@ -16,5 +18,9 @@ export class DogNamesComponent implements OnInit {
   logType: string;
   logText: string;
   time: any;
+
+  setName(dogName: string) {
+    this.cookieService.set("log_text", this.logText)
+  }
 
 }
