@@ -1,16 +1,24 @@
 <div class="card">
   <div class="card-header">
-      {{ logType }}
+    {{ logType }}
   </div>
   <div class="card-body">
-      <h5 class="card-title">{{ logText }}</h5>
-      <p class="card-text">{{ time }}</p>
-      <button class="btn btn-primary" (click)="showInputs = !showInputs">Edit Card</button>
+    <h5 class="card-title">{{ logText }}</h5>
+    <button class="btn btn-primary" (click)="showInputs = !showInputs">Edit Card</button>
   </div>
   <div *ngIf="showInputs">
       <input id="card-header" name="logType" [(ngModel)]="logType" type="text"><br>
       <input id="card-title" name="logText" [(ngModel)]="logText" type="text"><br>
-      <input id="card-text" name="time" [(ngModel)]="time" type="text"><br>
+      <input id="card-text" name="time" (click)="addLog()" type="button" value="press me!"><br>
+  </div>
+</div>
+<div class="card"  *ngFor="let log of logs">
+  <div class="card-header">
+    {{ log["log_type"] }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ log["log_text" }}</h5>
+    <p class="card-text">{{ log["time"] }}</p>
   </div>
 </div>
 <h2>Keeping the streak alive</h2>

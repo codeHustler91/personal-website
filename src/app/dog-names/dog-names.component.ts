@@ -15,9 +15,23 @@ export class DogNamesComponent implements OnInit {
   }
 
   showInputs: boolean;
+  logs: [{
+
+  }];
   logType: string;
   logText: string;
-  time: any;
+
+  addLog() {
+    console.log("hello")
+    const newLog = {
+      "log_type": this.logType,
+      "log_text": this.logText,
+      "time": Date.now()
+    }
+    this.logs.unshift(newLog);
+    this.logText = "";
+    this.logType = "";
+  }
 
   setName(dogName: string) {
     this.cookieService.set("log_text", this.logText)
